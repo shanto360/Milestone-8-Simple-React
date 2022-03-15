@@ -18,4 +18,14 @@ const getCountryHTML = country => {
     </div>
     `
 }
+// ----------Distructuring----------
+/* const getCountryHTML = country => {
+    const{name, flags} = country;
+    return`
+    <div class="country">
+        <h2>${name.common}</h2>
+        <img src="${flags.png}">
+    </div>
+    `
+} */
 loadCountries()
