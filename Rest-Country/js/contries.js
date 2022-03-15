@@ -10,6 +10,14 @@ const displayCountries = countries =>{
     const container = document.getElementById('countries');
     container.innerHTML = CountriesHTML.join('')
 }
+/* const getCountryHTML = country => {
+    return`
+    <div class="country">
+        <h2>${country.name.common}</h2>
+        <img src="${country.flags.png}">
+    </div> 
+    `
+} */
 // ----------destructuring----------
 /* const getCountryHTML = country => {
     const{name, flags} = country;
@@ -21,20 +29,14 @@ const displayCountries = countries =>{
     `
 } */
 // // -------parameter destructuring------
-/* const getCountryHTML = ({name,flags}) => {
+const getCountryHTML = ({name,flags,area}) => {
     return`
     <div class="country">
         <h2>${name.common}</h2>
         <img src="${flags.png}">
-    </div>
-    `
-} */
-const getCountryHTML = country => {
-    return`
-    <div class="country">
-        <h2>${country.name.common}</h2>
-        <img src="${country.flags.png}">
+        <p>Area: ${area}</p>
     </div>
     `
 }
+
 loadCountries()
