@@ -14,8 +14,11 @@ const Countries = () => {
             <h1>All counter in the world</h1>
             <h2>Aviailable Countries:{countries.length}</h2>
             {
-                countries.map(country => <Country name={country.name.common} population={country.population} area={country.area} ></Country>)
+                countries.map(country => <Country country={country} ></Country>)
             }
+            {/* {
+                countries.map(country => <Country name={country.name.common} population={country.population} area={country.area} ></Country>)
+            } */}
             {/* {
                 countries.map(country => <AllCountries name={country.name.common}population={country.population} area={country.area}></AllCountries>)
             } */}
