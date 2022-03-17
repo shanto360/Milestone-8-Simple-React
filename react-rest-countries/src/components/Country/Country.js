@@ -1,6 +1,17 @@
 import React from 'react';
 import './Country.css'
+// ------------destructuring-------
 const Country = (props) => {
+    const {area, population, name} = props.country
+    return (
+        <div className='country'>
+            <h2>Country Name:{name.common}</h2>
+            <h3>Population:{population}</h3>
+            <h3>Area:{area}</h3>
+        </div>
+    );
+};
+/* const Country = (props) => {
     return (
         <div className='country'>
             <h2>Country Name:{props.country.name.common}</h2>
@@ -8,6 +19,7 @@ const Country = (props) => {
             <h3>Area:{props.country.area}</h3>
         </div>
     );
-};
+}; */
+
 
 export default Country;
