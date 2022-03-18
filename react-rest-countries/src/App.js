@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import Countries from './Components/Countries/Countries';
-function App(){
-  return(
-    <div className = 'App'>
+
+function App() {
+  return (
+    <div className='App'>
       <Countries></Countries>
     </div>
   )
